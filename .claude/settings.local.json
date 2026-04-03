@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:theinspectioncompanytx.com)",
+      "Bash(npx:*)"
+    ]
+  }
+}
