@@ -1,0 +1,15 @@
+{
+  // Cloudflare Workers / Pages deployment config for The Inspection Company site.
+  //
+  // We build a fully static Next.js export into `./out` (see next.config.ts)
+  // and then serve it via the Workers Assets binding. This file lets the
+  // unified Workers Builds flow deploy the static export without needing a
+  // server-side Worker.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "inspection-company-website",
+  "compatibility_date": "2025-04-01",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
